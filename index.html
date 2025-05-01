@@ -1,0 +1,260 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="60">
+
+    <title>Danalaxmi AgroStore</title>
+    <link rel="icon" type="image/icon" href="images/organic.png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing:
+                border-box;
+            font-family:
+                sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #2e7d32;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            z-index: 999;
+        }
+
+        nav h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url("images\hero.jpg") center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 28px;
+            border: none;
+            background: #43a047;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #388e3c;
+        }
+
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #2e7d32;
+            text-align: center;
+        }
+
+        .categories,
+        .products,
+        .recommendations {
+            display: grid;
+            gap: 20px;
+        }
+
+        .categories {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .products {
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        }
+
+        .recommendations {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        .card {
+            background: #fff;
+            border: 3px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: #2e7d32;
+        }
+
+        .card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            padding: 8px 18px;
+            border: none;
+            background: #2e7d32;
+            color: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            position: sticky;
+            bottom: 0;
+            text-align: center;
+            background: #2e7d32;
+            color: #fff;
+            padding: 15px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Danalaxmi AgroStore</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li><br>
+            <li><a href="products.html">Products</a></li><br>
+            <li><a href="cart.html">Cart</a></li><br>
+            <li><a href="contact.html">Contact</a></li><br>
+        </ul>
+    </nav>
+
+
+    <!-- Product Categories -->
+    <div class="section">
+        <h3>Product Categories</h3>
+        <div class="categories">
+            <div class="card">
+                <img src="images\organic.png" />
+                <h4>Organic</h4>
+            </div>
+            <div class="card">
+                <img src="images\test-tube.png" />
+                <h4>Chemical</h4>
+            </div>
+            <div class="card">
+                <img src="images\water-bottle.png" />
+                <h4>Liquid</h4>
+            </div>
+            <div class="card">
+                <img src="images\barley.png" />
+                <h4>Seeds</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="section" style="background: #f9f9f9;">
+        <h3>Featured Products</h3>
+        <div class="products">
+            <div class="card">
+                <h4>NitroGrow 20kg</h4>
+                <p>High-yield eco-friendly fertilizer for all crops.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <h4>Organic Bloom Mix</h4>
+                <p>Natural fertilizer for flowers and veggies.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="card">
+                <h4>Liquid Super Fert</h4>
+                <p>Quick-absorbing nutrients for plants.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seasonal Recommendations -->
+    <div class="section">
+        <h3>Seasonal Recommendations</h3>
+        <div class="recommendations">
+            <div class="card">
+                <h4>Summer Special: AquaFeed</h4>
+                <p>Moisturizes soil in extreme heat and dryness.</p>
+            </div>
+            <div class="card">
+                <h4>Rainy Season: QuickRoot Grow</h4>
+                <p>Boosts plant roots in humid weather.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Danalaxmi AgroStore. All rights reserved.
+    </footer>
+</body>
+
+</html>
